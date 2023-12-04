@@ -5,6 +5,7 @@ import { HttpClientModule} from '@angular/common/http';//Hacer peticiones o soli
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductComponent } from './components/product/product.component';
+import { NgOptimizedImage } from '@angular/common';//Optimizar las imagenes como lazy loading
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProductComponent } from './components/product/product.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]
